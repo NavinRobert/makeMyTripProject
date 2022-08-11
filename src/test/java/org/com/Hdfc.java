@@ -15,7 +15,7 @@ public class Hdfc {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.hdfcbank.com/");
 		driver.manage().window().maximize();
-		Thread.sleep(7000);
+		Thread.sleep(10000);
 		WebElement al = driver.findElement(By.xpath("//div[@id='onetrust-close-btn-container']//button"));
 		al.click();
 		WebElement move = driver.findElement(By.xpath("(//a[@title='Pay'])[2]"));
