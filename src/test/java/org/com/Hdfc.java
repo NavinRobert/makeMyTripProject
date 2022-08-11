@@ -16,6 +16,9 @@ public class Hdfc {
 		driver.get("https://www.hdfcbank.com/");
 		driver.manage().window().maximize();
 		Thread.sleep(10000);
+		
+		driver.manage().window().maximize();
+		System.out.println("Git changes have made");
 		WebElement al = driver.findElement(By.xpath("//div[@id='onetrust-close-btn-container']//button"));
 		al.click();
 		WebElement move = driver.findElement(By.xpath("(//a[@title='Pay'])[2]"));
